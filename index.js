@@ -40,7 +40,7 @@ app.get('/convert/:domain/:port', function(req, res){
 					domain: domain,
 					port: port,
 					hashes: hash,
-					tsla: '_' + port + '._tcp.' + domain + '. IN TLSA 3 0 1 ' + hash,
+					tlsa: '_' + port + '._tcp.' + domain + '. IN TLSA 3 0 1 ' + hash,
 					configuration: {
 						certificateUsage: '3 - end entity',
 						selector: '0 - full certificate',

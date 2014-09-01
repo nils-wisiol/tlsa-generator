@@ -1,7 +1,7 @@
 {
-  "name": "tsla-generator",
+  "name": "tlsa-generator",
   "version": "0.0.0",
-  "description": "A web service that converts SSL certificates to DNSSEC DANE TSLA records.",
+  "description": "A web service that converts SSL certificates to DNSSEC DANE TLSA records.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,7 @@
   "keywords": [
     "DNSSEC",
     "DANE",
-    "TSLA",
+    "TLSA",
     "webservice"
   ],
   "author": "Nils Wisiol",
