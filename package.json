@@ -13,5 +13,9 @@
     "webservice"
   ],
   "author": "Nils Wisiol",
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~4.8.7",
+    "q": "~1.0.1"
+  }
 }
