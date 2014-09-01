@@ -32,14 +32,13 @@ app.get('/convert/:domain/:port', function(req, res){
 	
 	cert.retrieve(domain, port)
 		.then(function(pem) {
-			cert.tlsa(pem).then(function(hash) {
+			cert.tlsa(pem, domain, port).then(function(hash) {
 				res.set({'Content-Type': 'text/plain'});
 				res.send({
 					dnssec: false,
 					verified: false,
 					domain: domain,
 					port: port,
-					hashes: hash,
 					tlsa: '_' + port + '._tcp.' + domain + '. IN TLSA 3 0 1 ' + hash,
 					configuration: {
 						certificateUsage: '3 - end entity',
