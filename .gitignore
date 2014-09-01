@@ -1,0 +1,15 @@
+# IDE configuration
+.idea
+
+# temporary dirs for compiling
+.tmp
+
+# compiled version of the app
+dist
+
+# node module directory
+node_modules
+
+# unit test code coverage report
+test/report
+
